@@ -16,6 +16,13 @@
 <{if $smarty.server.HTTP_USER_AGENT|regex_replace:'/^.*MSIE\s*([0-9]+).*$/i':'\1' > 7}>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <{/if}>
+<{* OGP support *}>
+<meta property="og:title" content="<{$xoops_sitename}>" />
+<meta property="og:description" content="<{$xoops_meta_description}>" />
+<meta property="og:url" content="<{$xoops_url}>" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="<{$xoops_imageurl}>images/ogp_image.png" />
+<{* end OGP support *}>
 <link rel="stylesheet" type="text/css" href="<{$xoops_imageurl}>css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="<{$xoops_imageurl}>css/bootstrap-responsive.min.css" />
 <link href="<{$xoops_url}>/favicon.ico" rel="shortcut icon" type="image/x-icon" />
