@@ -1,3 +1,4 @@
+html,body {height:100%;}
 body 				{
 	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif, 'Droid Serif',"Helvetica Neue", Helvetica,;
 	-webkit-transition-property: font-size;
@@ -10,6 +11,17 @@ body 				{
 	-moz-transition-timing-function: linear, ease-in;
 	transition-timing-function: linear, ease-in;
 }
+
+#wrapper {
+	min-height: 100%;
+  height: auto !important;
+	margin-bottom:-95px;
+}
+.push {
+	height:95px;
+	clear:both;
+}
+
 
 h1,
 h2,

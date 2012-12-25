@@ -1,5 +1,5 @@
 【テーマ名　】 tw_corp
-【バージョン】 0.16
+【バージョン】 0.17
 【作　成　者】 marine / mistgreen
 【動作　環境】 XOOPS Cube Legacy 2.1x (HD1.04)、2.2
 【ライセンス】 MIT
@@ -195,6 +195,12 @@ define('_TC_A_HOVER_COLOR','#9a493f'); 							//基本a hover
 　ogp付加のためのメタタグ追加（argonさん作成のogp用画像も添付させていただきました。ありがとうございます。）
 2012-11-25 ver0.16
 　jQuery.fancybox の動作設定を少し変更。JSファイル不足を追加。
+2012-12-25 ver0.17
+　xugj_menu.htmlを更新（xugjでGEMさんに提示していただいた方法を採用、thx GEMさん）
+　　http://www.xugj.org/modules/d3forum/index.php?topic_id=1281#post_id6885
+　コンテンツが少ない場合にフッターを画面下に表示するように変更
+　新着PMがあった場合、最上部右のサブメニュー部分に表示がでるようにした。
+
 
 ======================================================
 お願い

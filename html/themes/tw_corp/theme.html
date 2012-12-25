@@ -63,12 +63,15 @@
 <{assign var="layoutR" value=R$xoops_showrblock}>
 <{assign var="layout" value=$layoutL$layoutR}>
 
+<div id="wrapper">
+
 <header id="overview">
 	<div id="header_inner" class="container">
 		<h1><a href="<{$xoops_url}>/"><{$xoops_sitename}></a><small><{$xoops_slogan}></small></h1>
 
 		<div id="information">
 			<ul>
+				<{if $pm.new_messages}><li><a href="<{$xoops_url}>/viewpmsg.php" style="color:red;font-weight:bold;"><{$smarty.const._THEME_LANGUAGE_NEWPMSG}></a></li><{/if}>
 				<li><a href="#">about</a></li>
 				<li><a href="#">access</a></li>
 				<li><a href="#">sitemap</a></li>
@@ -248,8 +251,8 @@
 </div><!-- /row -->
 
 </div><!-- /container -->
-
 <{* /contents *}>
+<div class="push"></div></div><{* end wrapper *}>
 
 <{* login block *}>
 <{include file="`$xoops_theme`/theme_cubelogin_block.html"}>
@@ -268,7 +271,7 @@ document.write('<a class="fancybox" href="#theme_login_block" title="<{$smarty.c
 		<a href="<{$xoops_url}>/user.php"><{$smarty.const._THEME_LANGUAGE_USER_ACCOUNT}></a>&nbsp;|&nbsp;
 		<a href="<{$xoops_url}>/edituser.php"><{$smarty.const._THEME_LANGUAGE_EDIT_ACCOUNT}></a>&nbsp;|&nbsp;
 		<a href="<{$xoops_url}>/notifications.php"><{$smarty.const._THEME_LANGUAGE_NORTIFICATION}></a>&nbsp;|&nbsp;
-		<a href="<{$xoops_url}>/viewpmsg.php" <{if $pm.new_messages}>class="new1"<{/if}>><{$smarty.const._THEME_LANGUAGE_VIEWPMSG}>(<{$pm.new_messages}>)</a>&nbsp;|&nbsp;
+		<a href="<{$xoops_url}>/viewpmsg.php" <{if $pm.new_messages}>class="new1"<{/if}>><{$smarty.const._THEME_LANGUAGE_VIEWPMSG}><{if $pm.new_messages}>(<{$pm.new_messages}>)<{/if}></a>&nbsp;|&nbsp;
 		<a href="<{$xoops_url}>/user.php?op=logout"><{$smarty.const._THEME_LANGUAGE_LOGOUT}></a>&nbsp;|&nbsp;
 		<{if $xoops_isadmin}>
 			<a href="<{$xoops_url}>/admin.php"><{$smarty.const._THEME_LANGUAGE_ADMIN_PAGE}></a>&nbsp;|&nbsp;
