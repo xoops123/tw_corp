@@ -5,7 +5,7 @@
 Name="tw_corp"
 Depends=Legacy_RenderSystem,legacy
 Url="http://xoops123.com/"
-Version="0.17"
+Version="0.18"
 
 [Theme]
 RenderSystem=Legacy_RenderSystem
